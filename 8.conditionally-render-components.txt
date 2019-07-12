@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>React Project</title>
+		<script src="https://unpkg.com/react@16.7.0/umd/react.development.js" crossorigin></script>
+		<script src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.development.js" crossorigin></script>
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<style>
+			#heading {
+				color: red;
+			}
+			.heading {
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="root"></div>
+		<script type="text/babel">
+			const Lake = ({name}) => <h1>{name}</h1>;
+			const SkiResor = ({name}) => <h1>{name}</h1>;
+			
+			const App = ({summer}) => (
+				<div>
+					{summer ? <Lake name="Lake Tahoe"/> : <SkiResor name="Alpine Meadows"/>}
+				</div>
+			)
+			
+			ReactDOM.render(
+				<App />,
+				document.getElementById("root")
+			);
+		</script>
+	</body>
+</html>

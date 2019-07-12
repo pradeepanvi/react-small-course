@@ -1,0 +1,11 @@
+npm start
+//will run localhost:3000
+
+npm run build
+//build for production view and it will create a build folder for you.
+
+npm install serve -g
+//install serve dependancy for your build files these you can see also in localhost
+
+serve -s build
+//build files will run localhost:5000
